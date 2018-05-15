@@ -1,2 +1,2 @@
 # treningsprogram
-My boyfriends workout program
+A workout program designed for client.
