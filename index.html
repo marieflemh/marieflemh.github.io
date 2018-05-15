@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<title>Kalkulator</title>
+</head>
+<body>
+<h1>STYRKELABBET</h1>
+<p>Fyll i 1 RM:</p>
+
+<div id = "1rm">
+    <label for="rm">1RM</label>
+    <select id="mySelect" onchange="myFunction()">
+      <option value="100">100</option>
+      <option value="102.5">102.5</option>
+      <option value="105">105</option>
+      <option value="107.5">107.5</option>
+      <option value="110">110</option>
+      <option value="112.5">112.5</option>
+      <option value="115">115</option>
+      <option value="117.5">117.5</option>
+      <option value="120">120</option>
+      <option value="122.5">122.5</option>
+      <option value="125">125</option>
+      <option value="127.5">127.5</option>
+      <option value="130">130</option>
+      <option value="132.5">132.5</option>
+      <option value="135">135</option>
+      <option value="137.5">137.5</option>
+      <option value="140">140</option>
+      <option value="142.5">142.5</option>
+      <option value="145">145</option>
+      <option value="147.5">147.5</option>
+      <option value="150">150</option>
+      <option value="152.5">152.5</option>
+      <option value="155">155</option>
+    </select>
+</div>
+  
+  <br><br>
+  <div id="table">
+<h1>Vecka 1</h1>
+  <table id="vecka1a">
+    <tr>
+      <th>PASS 1 MÅNDAG</th>
+      <th>Vikt</th>
+      <th>Set</th>
+      <th>Reps</th>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt1">kg</div></td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt2">kg</div></td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt3">kg</div></td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt4">kg</div></td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Hantelflyes</td>
+      <td>-</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>French press</td>
+      <td>-</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+  </table>
+    <table id="vecka1b">
+      <tr>
+        <th>PASS 2 FREDAG</th>
+        <th>Vikt</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt5">kg</div></td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt6">kg</div></td>
+        <td>1</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt7">kg</div></td>
+        <td>1</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt8">kg</div></td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt9">kg</div></td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt10">kg</div></td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Hantelflyes</td>
+        <td>-</td>
+        <td>5</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>French press</td>
+        <td>-</td>
+        <td>5</td>
+        <td>8</td>
+      </tr>
+  </table>
+<br><br> 
+
+  <table id="vecka2a">
+    <h1>Vecka 2</h1>
+    <tr>
+      <th>PASS 1 MÅNDAG</th>
+      <th>Vikt</th>
+      <th>Set</th>
+      <th>Reps</th>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt11">kg</div></td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt12">kg</div></td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt13">kg</div></td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Bänkpress</td>
+      <td><div id="vikt14">kg</div></td>
+      <td>8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Hantelflyes</td>
+      <td>-</td>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>French press</td>
+      <td>-</td>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+  </table>
+    
+    <table id="vecka2b">
+      <tr>
+        <th>PASS 2 FREDAG</th>
+        <th>Vikt</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt15">kg</div></td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt16">kg</div></td>
+        <td>1</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt17">kg</div></td>
+        <td>1</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt18">kg</div></td>
+        <td>4</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt19">kg</div></td>
+        <td>4</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Hantelflyes</td>
+        <td>-</td>
+        <td>5</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>French press</td>
+        <td>-</td>
+        <td>5</td>
+        <td>10</td>
+      </tr>
+
+  </table>
+    
+  <br><br>
+  
+    <table id="vecka3a">
+      <h1>Vecka 3</h1>
+      <tr>
+        <th>PASS 1 MÅNDAG</th>
+        <th>Vikt</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt20">kg</div></td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt21">kg</div></td>
+        <td>1</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt22">kg</div></td>
+        <td>1</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Bänkpress</td>
+        <td><div id="vikt23">kg</div></td>
+        <td>10</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Hantelflyes</td>
+        <td>-</td>
+        <td>4</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>French press</td>
+        <td>-</td>
+        <td>4</td>
+        <td>12</td>
+      </tr>
+    </table>
+    
+      <table id="vecka3b">
+        <tr>
+          <th>PASS 2 FREDAG</th>
+          <th>Vikt</th>
+          <th>Set</th>
+          <th>Reps</th>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt24">kg</div></td>
+          <td>1</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt25">kg</div></td>
+          <td>1</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt26">kg</div></td>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt27">kg</div></td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt28">kg</div></td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt29">kg</div></td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt30">kg</div></td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt31">kg</div></td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Hantelflyes</td>
+          <td>-</td>
+          <td>5</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>French press</td>
+          <td>-</td>
+          <td>5</td>
+          <td>12</td>
+        </tr>
+    </table>
+    <br><br>
+    
+      <table id="vecka4a">
+        <h1>Vecka 4</h1>
+        <tr>
+          <th>PASS 1 MÅNDAG</th>
+          <th>Vikt</th>
+          <th>Set</th>
+          <th>Reps</th>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt32">kg</div></td>
+          <td>1</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt33">kg</div></td>
+          <td>1</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt34">kg</div></td>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Bänkpress</td>
+          <td><div id="vikt35">kg</div></td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Hantelflyes</td>
+          <td>-</td>
+          <td>3</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>French press</td>
+          <td>-</td>
+          <td>3</td>
+          <td>10</td>
+        </tr>
+      </table>
+        <table id="vecka4b">
+          <tr>
+            <th>PASS 2 FREDAG</th>
+            <th>Vikt</th>
+            <th>Set</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt36">kg</div></td>
+            <td>1</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt37">kg</div></td>
+            <td>1</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt38">kg</div></td>
+            <td>1</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt39">kg</div></td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt40">kg</div></td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt41">kg</div></td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Hantelflyes</td>
+            <td>-</td>
+            <td>3</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>French press</td>
+            <td>-</td>
+            <td>3</td>
+            <td>12</td>
+          </tr>
+      </table>
+      <br><br>
+      
+        <table id="vecka5a">
+          <h1>Vecka 5</h1>
+          <tr>
+            <th>PASS 1 MÅNDAG</th>
+            <th>Vikt</th>
+            <th>Set</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt42">kg</div></td>
+            <td>1</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt43">kg</div></td>
+            <td>1</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt44">kg</div></td>
+            <td>1</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Bänkpress</td>
+            <td><div id="vikt45">kg</div></td>
+            <td>6</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Hantelflyes</td>
+            <td>-</td>
+            <td>4</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>French press</td>
+            <td>-</td>
+            <td>4</td>
+            <td>10</td>
+          </tr>
+        </table>
+          <table id="vecka5b">
+            <tr>
+              <th>PASS 2 FREDAG</th>
+              <th>Vikt</th>
+              <th>Set</th>
+              <th>Reps</th>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt46">kg</div></td>
+              <td>1</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt47">kg</div></td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt48">kg</div></td>
+              <td>1</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt49">kg</div></td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt50">kg</div></td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt51">kg</div></td>
+              <td>6</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Hantelflyes</td>
+              <td>-</td>
+              <td>4</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>French press</td>
+              <td>-</td>
+              <td>4</td>
+              <td>12</td>
+            </tr>
+        </table>
+        <br><br>
+        
+          <table id="vecka6a">
+            <h1>Vecka 6</h1>
+            <tr>
+              <th>PASS 1 MÅNDAG</th>
+              <th>Vikt</th>
+              <th>Set</th>
+              <th>Reps</th>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt52">kg</div></td>
+              <td>1</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt53">kg</div></td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt54">kg</div></td>
+              <td>1</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Bänkpress</td>
+              <td><div id="vikt55">kg</div></td>
+              <td>4</td>
+              <td>2</td>
+            </tr>
+          </table>
+            <table id="vecka6b">
+              <tr>
+                <th>PASS 2 FREDAG</th>
+                <th>Vikt</th>
+                <th>Set</th>
+                <th>Reps</th>
+              </tr>
+              <tr>
+                <td>Bänkpress</td>
+                <td><div id="vikt56">kg</div></td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Bänkpress</td>
+                <td><div id="vikt57">kg</div></td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Bänkpress</td>
+                <td><div id="vikt58">kg</div></td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Bänkpress</td>
+                <td><div id="vikt59">kg</div></td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Bänkpress</td>
+                <td><div id="vikt60">kg</div></td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Bänkpress</td>
+                <td><div id="vikt61">kg</div></td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+
+              <tr>
+                <td>PB-försök</td>
+                <td>1RM + 2,5</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Maxreps</td>
+                <td><div id="vikt62">kg</div></td>
+                <td>1</td>
+                <td>max</td>
+              </tr>
+          </table>
+        </div>
+ <br><br>
+</body>
+</html>

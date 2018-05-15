@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+#vecka1a, #vecka1b {
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+#vecka2a, #vecka2b {
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+#vecka3a, #vecka3b {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+#vecka4a, #vecka4b {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+#vecka5a, #vecka5b {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+#vecka6a, #vecka6b {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+p, h1  {
+    margin: 20px;
+}
+
+#mySelect  {
+    margin: 20px;
+}
+
+#table  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#table td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #af504c;
+    color: white;
