@@ -1,2 +1,2 @@
-# https://marieflemh.github.io
+# treningsprogram
 My boyfriends workout program
