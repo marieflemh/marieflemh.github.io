@@ -63,5 +63,5 @@ function myFunction() {
     document.getElementById("vikt60").innerHTML = Math.round(x * 0.93);
     document.getElementById("vikt61").innerHTML = Math.round(x * 0.98);
     document.getElementById("vikt62").innerHTML = Math.round(x * 0.85);
-    document.getElementById("vikt63").innerHTML = Math.round(x + y);
+    document.getElementById("vikt63").innerHTML = (x + y);
 }
