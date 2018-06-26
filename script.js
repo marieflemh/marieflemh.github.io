@@ -1,5 +1,6 @@
 function myFunction() {
     var x = document.getElementById("mySelect").value;
+    var y = 2.5;
     document.getElementById("vikt1").innerHTML = Math.round(x * 0.53);
     document.getElementById("vikt2").innerHTML = Math.round(x * 0.63);
     document.getElementById("vikt3").innerHTML = Math.round(x * 0.73);
@@ -62,5 +63,5 @@ function myFunction() {
     document.getElementById("vikt60").innerHTML = Math.round(x * 0.93);
     document.getElementById("vikt61").innerHTML = Math.round(x * 0.98);
     document.getElementById("vikt62").innerHTML = Math.round(x * 0.85);
-    document.getElementById("vikt63").innerHTML = Math.round(x + 2.50);
+    document.getElementById("vikt63").innerHTML = Math.round(x + y);
 }
